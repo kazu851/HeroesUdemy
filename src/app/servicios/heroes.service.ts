@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ThrowStmt } from '@angular/compiler';
+
 
 @Injectable()
 export class HeroesService {
@@ -63,13 +63,17 @@ export class HeroesService {
 
     }
 
-    getHeroes() {
+    getHeroes(): Heroe[] {
 
         return this.heroes;
 
     }
 
+    getHeroe( idx: string ) {
 
+      return this.heroes[idx];
+
+  }
 
 }
 
